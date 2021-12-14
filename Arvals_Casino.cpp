@@ -13,11 +13,11 @@ int main() {
     int dice;
     char choice;
     srand(time(0)); // "Seed" the random generator
-    cout << "\n\t\t========WELCOME TO ARVALS WORLD=======\n\n";
-    cout << "\n\nWhat's your Name : ";
+    std::cout << "\n\t\t========WELCOME TO ARVALS WORLD=======\n\n";
+    std::cout << "\n\nWhat's your Name : ";
     getline(cin, playerName);
-    cout << "\n\nEnter the starting balance to play game : $";
-    cin >> balance;
+    std::cout << "\n\nEnter the starting balance to play game : $";
+    std::cin >> balance;
 
     //Get players betting amount
 
@@ -25,7 +25,7 @@ int main() {
     {
         system("cls");
         rules();
-        cout << "\n\nYour current balance is $ " << balance << "\n";
+        std::cout << "\n\nYour current balance is $ " << balance << "\n";
 
     //Enter Balance
 
