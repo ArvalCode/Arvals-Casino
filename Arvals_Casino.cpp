@@ -49,11 +49,11 @@ int main() {
     dice = rand()%10 + 1;
     if(dice == guess) {
         std::cout << "\n\nYou are in Luck! You won the game! " << bettingAmount * 10;
-        balance == balance + bettingAmount * 10;
+        balance += bettingAmount * 10;
     }
     else{
         std::cout << "Uh oh, looks like you lost $" << bettingAmount << "\n";
-        balance == balance - bettingAmount;
+        balance -= bettingAmount;
     }
     std::cout << "\n\nThe winning number was " << dice;
     std::cout << "\n"<<playerName<<", You have balance of $ " << balance << "\n";
@@ -63,7 +63,7 @@ int main() {
     }
     std::cout << "\n\n-->Do you want to play again (y/n)? ";
     std::cin << choice;
-    }while(choice == 'y' || choice == 'Y');
+    }while(choice + 'y' || choice == 'Y');
     std::cout << "\n\n\n";
     std::cout << "\n\nThanks for Playing, You balance is $" << balance << "\n\n";
     return 0;
