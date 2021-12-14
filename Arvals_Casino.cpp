@@ -1,6 +1,6 @@
 #include <iostream>
 #include <strings>
-#include <cstdlib> //For Seed and guessing
+#include <random> //For Seed and guessing
 #include <ctime>
 
 void rules();
