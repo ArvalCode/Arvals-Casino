@@ -13,7 +13,7 @@ int main() {
     int dice;
     char choice;
     srand(time(0)); // "Seed" the random generator
-    std::cout << "\n\t\t========WELCOME TO ARVALS WORLD=======\n\n";
+    std::cout << "\n\n\n========WELCOME TO ARVALS WORLD=======\n\n";
     std::cout << "\n\nWhat's your Name : ";
     getline(cin, playerName);
     std::cout << "\n\nEnter the starting balance to play game : $";
