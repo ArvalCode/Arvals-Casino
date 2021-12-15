@@ -15,7 +15,7 @@ int main() {
     srand(time(0)); // "Seed" the random generator
     std::cout << "\n\n\n========WELCOME TO ARVALS WORLD=======\n\n";
     std::cout << "\n\nWhat's your Name : ";
-    std::getline(cin, playerName);
+    std::cin >> playerName;
     std::cout << "\n\nEnter the starting balance to play game : $";
     std::cin >> balance;
 
