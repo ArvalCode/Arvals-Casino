@@ -63,7 +63,7 @@ int main() {
     }
     std::cout << "\n\n-->Do you want to play again (y/n)? ";
     std::cin << choice;
-    }while(choice + 'y' || choice == 'Y');
+    }while(choice == 'y' || choice == 'Y');
     std::cout << "\n\n\n";
     std::cout << "\n\nThanks for Playing, You balance is $" << balance << "\n\n";
     return 0;
